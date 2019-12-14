@@ -16,7 +16,6 @@ dataset = dataset.dropna(axis=1)
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 corr = dataset.corr()
-print(corr)
 plt.subplots(figsize=(9, 5))
 sns.heatmap(
     corr,
